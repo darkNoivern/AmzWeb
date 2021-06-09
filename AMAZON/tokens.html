@@ -7,10 +7,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
 
         <style>
-            body{
+            
+            .arceus{
                 background-color: blueviolet;
                 /* background-color: brown; */
                 background-image: url("LeetCoin.png");
+                height: 1000px;
+                width: auto;
             }
 
             .work{
@@ -25,50 +28,120 @@
                 padding-bottom: 25px;
             }
 
+
+            .nav1,.nav2 {
+                border: 2px solid indianred;
+
+                margin-bottom: 1px;
+                height: 50px;
+                width: 1500px;
+
+                /* padding: 10px; */
+
+                text-transform: uppercase;
+            }
+
+            li a {
+                text-decoration: none;
+                padding: 10px;
+            }
+
+            .nav1 a {
+                color: black;
+            }
+
+            .nav2 a {
+                color: gold;
+            }
+
+            li {
+                float: left;
+                list-style-type: none;
+            }
+
+            .nav1 a:hover {
+                background-color: black;
+                color: gold;
+            }
+
+            .nav2 a:hover {
+                background-color: gold;
+                color: black;
+            }
+
+            .flr {
+                float: right;
+                text-align: right;
+            }
+
+
         </style>
     </head>
 
     <body>
-        <div class="dx" style="display:flex; justify-content: center; align-items: center; width: cover; height: 350px; font-size: 100px;">
-            AmzC<img src="LeetCoin.png" style="height:100px; width: 100px;">in
-        </div>
-        <div style="display: flex; justify-content: center; align-items: center;">
 
-            <div class="work">
-                <h1>Amazing Offer</h1>
-                <h4>Purchase Goods of amount $500 & get 100 AmzCOin for Free !!!</h4>
-                <img src="LeetCoin.png" style="height: 100px; width: 100px;">
+        <nav class="nav1" style="background-color: gold; color: black;">
+            <ul>
+                <li><img src="amazon.png"
+                        style="height: 25px; width: 50px; padding-left: 3px; padding-top: 0px; padding-right: 10px;"></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">EZZ NAV</a></li>
+                <li class="flr"><a href="signin.html">Sign in</a></li>
+            </ul>
+        </nav>
+        <nav class="nav2" style="background-color: black; color: gold;">
+            <ul>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">today's offer</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#">Search</a></li>
+                <li class="flr" style="float: right;"><a href="#">Logout</a></li>
+                <li class="flr"><a href="tokens.html">Tokens</a></li>
+            </ul>
+        </nav>
+    
+        <div class="arceus">
+            <div class="dx" style="display:flex; justify-content: center; align-items: center; width: cover; height: 350px; font-size: 100px;">
+                AmzC<img src="LeetCoin.png" style="height:100px; width: 100px;">in
             </div>
+            <div style="display: flex; justify-content: center; align-items: center;">
 
-            <div style="height: 300px; width: 50px;"></div>
+                <div class="work">
+                    <h1>Amazing Offer</h1>
+                    <h4>Purchase Goods of amount $500 & get 100 AmzCOin for Free !!!</h4>
+                    <img src="LeetCoin.png" style="height: 100px; width: 100px;">
+                </div>
 
-            <div class="work">
-                <h2>Your Present AmzCOin count is</h2>
-                <h1 style="font-size: 100px;">523</h1>
-            </div>
+                <div style="height: 300px; width: 50px;"></div>
 
-            <div style="height: 300px; width: 50px;"></div>
+                <div class="work">
+                    <h2>Your Present AmzCOin count is</h2>
+                    <h1 style="font-size: 100px;">523</h1>
+                </div>
 
-            <div class="work">
-                <h3>You Can redeem your AmzCOin <br> for various items.</h3>
+                <div style="height: 300px; width: 50px;"></div>
 
-                <form>
-                    Item : 
-                    <select>
-                        <option value="NuLL">- - select - -</option>
-                        <option value="Shoe">Shoe</option>
-                        <option value="Lpbag">Laptop Bag</option>
-                        <option value="T-shirt">T-Shirt</option>
-                        <option value="Jerseys">Jerseys</option>
-                    </select>
+                <div class="work">
+                    <h3>You Can redeem your AmzCOin <br> for various items.</h3>
 
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    
-                    <input type="submit" value="Redeem" style="justify-content: center; padding: 5px 15px 5px;">
-                </form>
+                    <form>
+                        Item : 
+                        <select>
+                            <option value="NuLL">- - select - -</option>
+                            <option value="Shoe">Shoe</option>
+                            <option value="Lpbag">Laptop Bag</option>
+                            <option value="T-shirt">T-Shirt</option>
+                            <option value="Jerseys">Jerseys</option>
+                        </select>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="submit" value="Redeem" style="justify-content: center; padding: 5px 15px 5px;">
+                    </form>
+                </div>
             </div>
         </div>
     </body>
